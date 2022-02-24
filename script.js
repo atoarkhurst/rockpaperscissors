@@ -58,7 +58,7 @@ buttons.forEach((button) => {
 
     // and for each one we add a 'click' listener
     button.addEventListener('click', () => {
-        if (cScore < 5 && pScore < 5){
+       
       let computerSelection = computerPlay();
       computerChoice.textContent = computerSelection;
       let playerSelection = button.id;
@@ -77,6 +77,8 @@ buttons.forEach((button) => {
           computerPoints.textContent = cScore;
         
       }
+
+      if (cScore < 5 && pScore < 5){
 
     }else{
         if (pScore > cScore){
